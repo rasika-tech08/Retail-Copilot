@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retail Copilot</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>🛒 Retail Copilot</h1>
+        <p>Smart Inventory & Product Assistant</p>
+    </header>
+
+    <main>
+
+        <section class="hero">
+            <h2>Welcome to Retail Copilot</h2>
+            <p>
+                Analyze your products and get smart retail insights.
+            </p>
+        </section>
+
+        <section class="products-section">
+            <h2>📦 Product Inventory</h2>
+
+            <div id="product-list" class="product-grid">
+                <!-- Products will appear here -->
+            </div>
+        </section>
+
+        <section class="copilot">
+            <h2>🤖 Retail Copilot</h2>
+
+<div class="quick-questions">
+    <button onclick="askQuick('What products are available?')">
+        📦 All Products
+    </button>
+
+    <button onclick="askQuick('Show me grocery products')">
+        🛒 Grocery
+    </button>
+
+    <button onclick="askQuick('Show products below ₹100')">
+        💰 Under ₹100
+    </button>
+
+    <button onclick="askQuick('Show personal care products')">
+        🧴 Personal Care
+    </button>
+</div>
+
+<div class="stats" id="stats">
+    <div class="stat-card">
+        <h3 id="totalProducts">0</h3>
+        <p>Total Products</p>
+    </div>
+
+    <div class="stat-card">
+        <h3 id="groceryProducts">0</h3>
+        <p>Grocery</p>
+    </div>
+
+    <div class="stat-card">
+        <h3 id="beverageProducts">0</h3>
+        <p>Beverages</p>
+    </div>
+
+    <div class="stat-card">
+        <h3 id="personalProducts">0</h3>
+        <p>Personal Care</p>
+    </div>
+</div>
+
+            <textarea
+                id="question"
+                placeholder="Ask something about your products..."
+            ></textarea>
+
+            <button onclick="askCopilot()">
+                Ask Copilot
+            </button>
+
+            <div id="answer" class="answer">
+                Your answer will appear here.
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Retail Copilot © 2026</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

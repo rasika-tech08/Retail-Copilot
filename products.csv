@@ -1,0 +1,11 @@
+product_id,product_name,category,price
+P001,Rice 5kg,Grocery,350
+P002,Wheat Flour 5kg,Grocery,280
+P003,Milk 1L,Dairy,60
+P004,Tea 250g,Beverages,140
+P005,Sugar 1kg,Grocery,55
+P006,Coffee 200g,Beverages,180
+P007,Biscuits,Grocery,30
+P008,Cooking Oil 1L,Grocery,150
+P009,Soap,Personal Care,40
+P010,Shampoo,Personal Care,120
